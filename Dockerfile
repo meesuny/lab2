@@ -1,12 +1,12 @@
 # syntax=docker/dockerfile:1
 
-FROM python:3.10.6-bullseye
+FROM python:3.10.7-bullseye
 
 COPY requirements.txt requirements.txt   
 
 RUN pip install -r requirements.txt
 
-WORKDIR /notebooks
+WORKDIR /lab2
 
 EXPOSE 8888
 
